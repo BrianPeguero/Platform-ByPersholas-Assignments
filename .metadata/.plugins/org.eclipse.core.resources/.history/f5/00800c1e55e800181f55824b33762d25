@@ -1,0 +1,8 @@
+package coreJava.Services;
+
+import coreJava.Repositories.CourseInterface;
+import coreJava.Util.DAO;
+
+public class CourseImpliment extends DAO implements CourseInterface {
+
+}

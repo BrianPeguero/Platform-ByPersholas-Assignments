@@ -1,0 +1,23 @@
+package coreJava.Enums;
+
+public enum TeachingEnum {
+	ASSIGN_INSTRUCTOR_TO_COURSE("ALTER teacher"
+							  + "INSERT VALUES(?, ?, ?)"),
+	GET_INSTRUCTORS_COURSES(""),
+	GET_INSTRUCTORS_TEACHING_COURSES("SELECT course.course_name, instructor.instructor_name "
+								   + "FROM teaching "
+								   + "JOIN course "
+								   + "ON course.course_id = teching.course_id "
+								   + "JOIN instructor "
+								   + "ON teaching.instructor_id = instructor.instructor_id");
+	
+	private final String query;
+	
+	TeachingEnum(String query){
+		this.query = query;
+	}
+	
+	public String getQuery() {
+		return query;
+	}
+}

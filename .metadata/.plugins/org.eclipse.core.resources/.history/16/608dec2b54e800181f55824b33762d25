@@ -1,0 +1,5 @@
+package coreJava.Repositories;
+
+public interface StudentInterface {
+
+}

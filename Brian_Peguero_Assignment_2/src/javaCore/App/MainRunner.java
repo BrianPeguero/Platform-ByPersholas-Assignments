@@ -1,0 +1,184 @@
+package javaCore.App;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javaCore.App.Models.Item;
+import javaCore.App.Services.ItemDAOImplement;
+import javaCore.App.Services.OrderDAOImplement;
+
+public class MainRunner {
+
+	/**
+	 * Displays available items to the user with the getItemsInStock() method.
+	 * Allows user to add them to their cart Allows user to checkout When user
+	 * checks out, use the createOrder() method to create an order with the item ids
+	 * and quantities they purchased After the order is created, use the
+	 * updateQuantityInStock() method to update the quantity_in_stock for each item
+	 * purchased
+	 */
+	public static void main() {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		List<Item> listOfItems = getItemsInStock();
+		displayItemInStock(listOfItems);
+		
+		System.out.println("");
+		
+		Map<Integer, Integer> cart = new HashMap<Integer, Integer>();
+		
+		menu(br, cart, listOfItems);
+		
+	}
+	
+	/**
+	 * adds the order of the cart to the database and lowers the quantity of the items quantity stock
+	 * 
+	 * @param cart  Map<Integer, Integer>
+	 * @param listOfItems  List<Item>
+	 */
+	public static void createOrderAndPurchase(Map<Integer, Integer> cart, List<Item> listOfItems) {
+		OrderDAOImplement order = new OrderDAOImplement();
+		ItemDAOImplement item = new ItemDAOImplement();
+		
+		order.createOrder(cart);
+		
+		for(Item i : listOfItems) {
+			if ((int)cart.keySet().toArray()[0] == i.getId()) {
+				item.updateQuantityInStock((int)cart.keySet().toArray()[0], cart.get((int)cart.keySet().toArray()[1]));
+			}
+		}
+	}
+	
+	
+	/**
+	 * Adds the Items to get ready for purchase in a HashMap object
+	 * 
+	 * @param id
+	 * @param quantity
+	 * @return
+	 */
+	public static Map<Integer, Integer> addToCart(int id, int quantity){
+		Map<Integer, Integer> cart = new HashMap<Integer, Integer>();
+		
+		cart.put(id, quantity);
+		
+		return cart;
+	}
+	
+	/**
+	 * makes sure the item and amount are valid
+	 * 
+	 * @param id
+	 * @param quantity
+	 * @param listOfItems
+	 * @return
+	 */
+	public static boolean validateOrder(int id, int quantity, List<Item> listOfItems) {
+		boolean isValidOrder = false;
+		
+		for (Item i : listOfItems) {
+			if(i.getId() == id) {
+				if(quantity < i.getQuantity_in_stock()) {
+					isValidOrder = true;
+				} else {
+					System.out.println("Sorry not a valid amount for that item\nPlease try again.");
+				}
+			} else {
+				System.out.println("Sorry not a valid Item\nPlease try again.");
+				
+			}
+		}
+		
+		return isValidOrder;
+	}
+	
+	/**
+	 * 
+	 * 
+	 * @param br
+	 * @param cart
+	 * @param listOfItems
+	 */
+	public static void menu(BufferedReader br, Map<Integer, Integer> cart, List<Item> listOfItems) {
+		try {
+			System.out.println("Would you like to do? \n1. Add to cart\n2. quit\n");
+			int input = getInput(br);
+			while (input == 1) {
+				
+				System.out.print("Which item would you like by its id number?\t");
+				int id = getInput(br);
+				System.out.print("How much of it would you like?\t");
+				int quantity = getInput(br);
+				
+				if (validateOrder(id, quantity, listOfItems)) {
+					cart = addToCart(id, quantity);
+				}
+				//asks again
+				System.out.println("\nWould you like to do? \n1. Add to cart\n2. Quit\n");
+				input = getInput(br);
+			}
+			
+			System.out.println("\\nWould you like to do? \\n1. purchase\\n2. Quit\\n");
+			input = getInput(br);
+			
+			while(input == 1) {
+				createOrderAndPurchase(cart, listOfItems);
+			}
+			
+		} catch (IOException e) {
+			System.out.println("\nSorry i didn't get that. Please try again\n");
+			main();
+		} catch (NumberFormatException e) {
+			System.out.println("\nSorry i didn't get that. Please try again\n");
+			main();
+		}
+	}
+	
+	/**
+	 * gets the input from the user
+	 * 
+	 * @param br  BufferedReader
+	 * @return input  int
+	 * @throws IOException
+	 * @throws NumberFormatException
+	 */
+	public static int getInput(BufferedReader br) throws IOException, NumberFormatException{
+		int input = Integer.parseInt(br.readLine());
+		return input;
+	}
+	
+	/**
+	 * using a for-each loop to got through the list of items passed in
+	 * 
+	 * @param listOfItems
+	 */
+	public static void displayItemInStock(List<Item> listOfItems) {
+		for (Item i : listOfItems) {
+			System.out.println(i);
+		}
+	}
+	
+	/**
+	 * gets all items in stock from the database
+	 * 
+	 * @return listOfItems  List<Item>
+	 */
+	public static List<Item> getItemsInStock() {
+		//creates instance where connection to the database is possible
+		ItemDAOImplement itemDAOImplement = new ItemDAOImplement();
+		
+		List<Item> listOfItems = new ArrayList<Item>();
+		
+		//connects to the database executes query and closes database
+		listOfItems = itemDAOImplement.getItemsInStock();
+		
+		return listOfItems;
+	}
+
+}

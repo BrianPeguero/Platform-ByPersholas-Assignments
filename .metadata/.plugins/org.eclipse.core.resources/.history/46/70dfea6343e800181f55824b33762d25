@@ -1,0 +1,30 @@
+package coreJava.Models;
+
+public class Student {
+	
+	private int student_id;
+	private String full_name;
+	private String email;
+	private double gpa;
+	private String password;
+	private int student_role;
+	
+	public Student() {
+		this.email = "";
+		this.full_name = "";
+		this.gpa = 0;
+		this.password = "";
+		this.student_id = 0;
+		this.student_role = -1;
+	}
+	
+	public Student(String full_name, String email, double gpa, String password, int student_role) {
+		this.email = email;
+		this.full_name = full_name;
+		this.gpa = gpa;
+		this.password = password;
+		this.student_id = student_id;
+		this.student_role = -1;
+	}
+	
+}

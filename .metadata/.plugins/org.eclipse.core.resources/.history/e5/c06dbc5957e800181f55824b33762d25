@@ -1,0 +1,23 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+
+public interface CourseDAOI {
+	
+	/**
+	 * This method takes no parameter and returns every Course in the database.
+	 * 
+	 * @return
+	 */
+	public List<Course>getAllCourses();
+	
+	/**
+	 * 
+	 * 
+	 * @param instructor_id
+	 * @return
+	 */
+	public List<Course> getCourseByInstructor(int instructor_id);
+}

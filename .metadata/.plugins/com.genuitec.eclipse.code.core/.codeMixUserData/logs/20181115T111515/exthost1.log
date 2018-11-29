@@ -1,0 +1,39 @@
+[2018-11-15 11:15:25.189] [exthost1] [info] extension host started
+[2018-11-15 11:15:25.784] [exthost1] [info] extension host started
+[2018-11-15 11:15:25.844] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:25.844] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\debug-auto-launch\out\extension
+[2018-11-15 11:15:25.861] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:25.861] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\emmet\dist\extension
+[2018-11-15 11:15:25.920] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:25.920] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\merge-conflict\out\extension
+[2018-11-15 11:15:25.945] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:25.945] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\search-rg\out\extension
+[2018-11-15 11:15:25.968] [exthost1] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:25.969] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\christian-kohler.path-intellisense-1.4.2\out\src\extension
+[2018-11-15 11:15:26.199] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:26.199] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\dbaeumer.vscode-eslint-1.6.0\client\out\extension
+[2018-11-15 11:15:27.090] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:27.090] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\formulahendry.auto-close-tag-0.5.6\out\src\extension
+[2018-11-15 11:15:27.109] [exthost1] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:27.109] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\hookyqr.beautify-1.4.4\extension
+[2018-11-15 11:15:27.978] [exthost1] [info] ExtensionService#_doActivateExtension ms-vsts.team {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:27.978] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\ms-vsts.team-1.142.0\out\src\extension
+[2018-11-15 11:15:37.517] [exthost1] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-11-15 11:15:37.517] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\zignd.html-css-class-completion-1.17.1\out\src\extension
+[2018-11-15 11:15:42.617] [exthost1] [info] eager extensions activated
+[2018-11-15 11:15:42.618] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-11-15 11:15:42.618] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\configuration-editing\out\extension
+[2018-11-15 11:15:42.779] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-11-15 11:15:42.779] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\json-language-features\client\dist\jsonMain
+[2018-11-15 11:15:44.423] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-11-15 11:15:44.423] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\typescript-language-features\dist\extension
+[2018-11-15 11:15:45.127] [exthost1] [info] ExtensionService#_doActivateExtension vscode.grunt {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2018-11-15 11:15:45.127] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\grunt\out\main
+[2018-11-15 11:15:45.204] [exthost1] [info] ExtensionService#_doActivateExtension vscode.gulp {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2018-11-15 11:15:45.204] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\gulp\out\main
+[2018-11-15 11:15:45.283] [exthost1] [info] ExtensionService#_doActivateExtension vscode.jake {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2018-11-15 11:15:45.283] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\jake\out\main
+[2018-11-15 11:15:45.363] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2018-11-15 11:15:45.363] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\npm\out\main
+[2018-11-15 11:15:46.174] [exthost1] [info] ExtensionService#_doActivateExtension rebornix.ruby {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2018-11-15 11:15:46.174] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\rebornix.ruby-0.20.0\out\ruby.js

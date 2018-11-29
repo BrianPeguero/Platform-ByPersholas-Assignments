@@ -1,0 +1,27 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+
+public interface TeachingDAOI {
+
+	/**
+	 * This method takes as a parameter a course_id and a instructor_id int and
+	 * perform an INSERT query into the TEACHING table to assign an instructor to a
+	 * course.
+	 * 
+	 * @param course_id
+	 * @param instructor_id
+	 * 
+	 * @return 
+	 */
+	public int assignIntructorToCourse(int course_id, int instructor_id);
+
+	/**
+	 * 
+	 * 
+	 * @return
+	 */
+	public List<Course> getInstructorsCourses();
+}

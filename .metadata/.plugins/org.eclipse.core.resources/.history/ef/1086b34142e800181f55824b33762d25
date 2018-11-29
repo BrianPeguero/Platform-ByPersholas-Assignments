@@ -1,0 +1,10 @@
+package coreJava.Models;
+
+public class Teaching {
+	
+	private String course_name;
+	private double minimum_gpa;
+	private String full_name;
+	private String email;
+	
+}

@@ -1,0 +1,40 @@
+package javaCore.App.Services;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import javaCore.App.Enums.OrderEnum;
+import javaCore.App.Repositories.OrderDAOInterface;
+import javaCore.App.Util.AbstractDAO;
+
+public class OrderDAOImplement extends AbstractDAO implements OrderDAOInterface{
+	
+	/**
+	 * returns if the query executed correctly
+	 * 
+	 * @param order  Map<Integer, Integer>
+	 * 
+	 * @return executed  boolean
+	 */
+	public boolean createOrder(Map<Integer, Integer> order) {
+		
+		boolean executed = false;
+		
+		connect();
+		try {
+			ps = connection.prepareStatement(OrderEnum.CREATE_ORDER.getQuery());
+			ps.setInt(1, (int) order.keySet().toArray()[0]);
+			ps.setInt(2, order.get(order.keySet().toArray()[0]));
+			
+			executed = ps.execute();
+			
+		} catch (SQLException e) {
+			System.out.println("Couldnt create your order");
+		} finally {
+			dispose();
+		}
+		
+		return executed;
+	}
+
+}

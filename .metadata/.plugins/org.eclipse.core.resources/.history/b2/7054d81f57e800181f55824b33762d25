@@ -1,0 +1,23 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Instructor;
+
+public interface InstructorDAOI {
+	
+	/**
+	 * Returns a list of all the intructors in the database
+	 * 
+	 * @return
+	 */
+	public List<Instructor> getAllInstructors();
+	
+	/**
+	 * Returns an Instructor object by searching for its email
+	 * 
+	 * @param email
+	 * @return
+	 */
+	public Instructor getInstructorByEmail(String email);
+}

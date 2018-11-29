@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="385" key="DIALOG_X_ORIGIN"/>
+		<item value="192" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="978" key="dialogHeight"/>
+		<item value="584" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\brian\Documents\Programming\Java"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="934" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1018" key="DIALOG_HEIGHT"/>
+		<item value="81" key="DIALOG_X_ORIGIN"/>
+		<item value="-251" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ZipFile" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\brian\Desktop\resources.zip"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\brian\Downloads"/>
+			<item value="C:\Users\brian\OneDrive\Desktop"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_School_Managment_Sys3.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_School_Managment_System.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Week_6_Assignment_5.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Week_6_Assignment_4.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Week_6_Assignment_3.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Week_6_Assignment_2.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Week_6_Assignment_1.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Slide_20.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Slide_18.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Slide_16.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Slide_12_FileReader_ FileWriter.zip"/>
+			<item value="C:\Users\brian\Desktop\Brian_Peguero_Calc.zip"/>
+			<item value="C:\Users\brian\Desktop\Slide21.zip"/>
+			<item value="C:\Users\brian\Desktop\Slide19and20.zip"/>
+			<item value="C:\Users\brian\Desktop\Slide18.zip"/>
+			<item value="C:\Users\brian\Desktop\Slide17.zip"/>
+			<item value="C:\Users\brian\Desktop\Slide16.zip"/>
+			<item value="C:\Users\brian\Documents\Cognizant\Assignments\In ClassWeek 6 Day 1.zip"/>
+			<item value="C:\Users\brian\Documents\Cognizant\Assignments\Week 5 Assignment 4.zip"/>
+			<item value="C:\Users\brian\Documents\Cognizant\Assignments\Week 5 Assignment 3.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,8 @@
+package coreJava.Services;
+
+import coreJava.Repositories.InstructorInterface;
+import coreJava.Util.DAO;
+
+public class InstructorImpliment extends DAO implements InstructorInterface {
+
+}

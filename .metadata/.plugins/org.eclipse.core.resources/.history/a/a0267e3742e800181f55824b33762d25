@@ -1,0 +1,22 @@
+package coreJava.Models;
+
+public class Attending {
+	private String course_name;
+	private String full_name;
+	private String email;
+	
+	public Attending() {
+		this.course_name = "";
+		this.email = "";
+		this.full_name = "";
+	}
+	
+	public Attending(String course_name, String full_name, String email) {
+		this.course_name = course_name;
+		this.email = email;
+		this.full_name = full_name;
+	}
+	
+	
+	
+}

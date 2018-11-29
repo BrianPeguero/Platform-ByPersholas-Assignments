@@ -1,0 +1,55 @@
+package slide18;
+
+/**
+ * The program will read in text file Using Scanner to read in a buffered stream
+ * 
+ * @author Brian
+ * */
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Slide18 {
+	
+	public static void readIn(Scanner s) {
+		/**
+		 * The method takes in a Scanner carrying a buffered input stream
+		 * evaluates whether there is a next line or not and prints out to the console the
+		 * line
+		 * 
+		 * @param s  a Scanner holding a buffered input
+		 * */
+		while(s.hasNext()) {
+			/*if(s.next().equals("\n")) {
+				System.out.println("\n");
+			} else if(s.next().equals(" ")) {
+				System.out.println(" ");
+			}*/
+			System.out.print(s.next());
+		}
+	}
+
+	public static void main(String[] args) {
+		/**
+		 * Initializes and buffered stream, input stream, and scanner to close later
+		 * */	
+		Scanner s = null;
+		File readin = new File("/number.txt");
+		
+		try {
+			//br = new BufferedReader(new FileReader(readin));
+			s = new Scanner(new BufferedReader(new FileReader(readin)));
+			
+			readIn(s);
+			
+		} catch(IOException e) {
+			System.out.println("Sorry couldn't read the file");
+		} finally {
+			s.close();
+		}
+	}
+
+}

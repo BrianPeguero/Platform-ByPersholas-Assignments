@@ -1,0 +1,99 @@
+package problem3;
+
+import java.io.*;
+import java.nio.*;
+import java.nio.file.Files;
+
+
+public class Student {
+	
+	private String name;
+	private int grade;
+	private double gpa;
+	
+	public Student(String name, int grade, double gpa) {
+		this.name = name;
+		this.grade = grade;
+		this.gpa = gpa;
+	}
+	
+	
+//======================= Getters ===================================	
+	public String getName() {
+		return this.name;
+	}
+	
+	public int getGrade() {
+		return this.grade;
+	}
+
+	public double getGpa() {
+		return this.gpa;
+	}
+	
+		
+//======================= Setters ===================================
+	public void setName(String newName) {
+		this.name = newName;
+	}
+	
+	public void setGrade(int newGrade) {
+		this.grade = newGrade;
+	}
+
+	public void setGpa(double newGpa) {
+		this.gpa = newGpa;
+	}
+
+
+//===================== Static Methods ===========================================	
+	public static String getNameInput() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Please enter the students name: ");
+		String name = input.nextLine();
+		
+		return name;
+	}
+	
+	public static int getGradeInput() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Please enter the students grade: ");
+		int grade = input.nextInt();
+		
+		return grade;
+	}
+	
+	public static double getGpaInput() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Please enter the students gpa: ");
+		double gpa = input.nextDouble();
+		
+		return gpa;
+	}
+	
+	public static void writeNameToFile(Student stud) {
+		
+	}
+	
+	public static void writeGradeToFile(Student stud) {
+		
+	}
+
+	public static void writeGpaToFile(Student stud) {
+	
+	}
+	
+//======================== Main ===========================================
+	public static void main(String[] args) {
+		String name = getNameInput();
+		int grade = getGradeInput();
+		double gpa = getGpaInput();
+		
+		Student s1 = new Student(name, grade, gpa);
+		String file = "C:\\Users\\bri\\Desktop";
+		InputStream istr = Files.newInputStream(file);
+	}
+}

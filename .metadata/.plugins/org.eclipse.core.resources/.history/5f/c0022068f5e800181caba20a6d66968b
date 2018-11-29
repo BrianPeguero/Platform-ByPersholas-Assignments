@@ -1,0 +1,5 @@
+package coreJava.Enums;
+
+public enum CourseEnum {
+	
+}

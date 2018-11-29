@@ -1,0 +1,16 @@
+package coreJava.Enums;
+
+public enum CourseEnum {
+	GET_ALL_COURSES("SELECT * FROM courses");
+	GEt_COURSE_BY_INSTRUCTOR("");
+	
+	private final String query;
+	
+	CourseEnum(String query){
+		this.query = query;
+	}
+	
+	public String getQuery() {
+		return query;
+	}
+}

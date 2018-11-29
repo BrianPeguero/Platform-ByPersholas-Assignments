@@ -1,0 +1,30 @@
+package coreJava.Services;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+import coreJava.Models.Teaching;
+import coreJava.Repositories.TeachingDAOI;
+import coreJava.Util.DAO;
+
+public class TeachingImpliment extends DAO implements TeachingDAOI {
+
+	@Override
+	public int assignIntructorToCourse() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Teaching> getInstructorsCourses() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int assignIntructorToCourse(int course_id, int instructor_id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

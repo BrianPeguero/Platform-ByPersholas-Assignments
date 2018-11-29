@@ -1,0 +1,21 @@
+package coreJava.Models;
+
+public class Instructor {
+	
+	private int instructor_id;
+	private String full_name;
+	private String email;
+	private String speciality;
+	private int admin_role;
+	private String password;
+	
+	public Instructor() {
+		this.admin_role = 1;
+		this.email = "";
+		this.full_name = "";
+		this.instructor_id = 0;
+		this.password = "";
+		this.speciality = "";
+	}
+	
+}

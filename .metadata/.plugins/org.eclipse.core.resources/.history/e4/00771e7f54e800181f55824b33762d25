@@ -1,0 +1,8 @@
+package coreJava.Services;
+
+import coreJava.Repositories.StudenDAOI;
+import coreJava.Util.DAO;
+
+public class StudentImpliment extends DAO implements StudenDAOI{
+	
+}

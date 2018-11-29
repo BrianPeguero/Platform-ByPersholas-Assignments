@@ -1,0 +1,10 @@
+package coreJava.Repositories;
+
+public interface StudenDAOI {
+	/**
+	 * Returns a Student object from their email
+	 * 
+	 * @param email
+	 */
+	public Student getStudentByEmail(String email);
+}

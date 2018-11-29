@@ -1,0 +1,77 @@
+package coreJava.DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public abstract class DAO {
+	private final String url = "jdbc:oracle:thin:@C##BRIAN:1521:orc";
+	private final String username = "C##brian";
+	private final String password = "ccpgO#323";
+	
+	protected Connection conn = null;
+	protected PreparedStatement ps = null;
+	protected ResultSet rs = null;
+	
+	public void connect() {
+		try {
+			conn = DriverManager.getConnection(url, username, password);
+		} catch (SQLException e) {
+			System.out.println("/nCouldn't connect to the database.../n");
+		}
+	}
+	
+	public void dispose() {
+		try {
+			rs.close();
+			ps.close();
+			conn.close();
+		} catch (SQLException e) {
+			System.out.println("\nCouldn't close out try force stopping the program.\n");
+		}
+	}
+
+	
+	
+	public Connection getConn() {
+		return conn;
+	}
+
+	public void setConn(Connection conn) {
+		this.conn = conn;
+	}
+
+	public PreparedStatement getPs() {
+		return ps;
+	}
+
+	public void setPs(PreparedStatement ps) {
+		this.ps = ps;
+	}
+
+	public ResultSet getRs() {
+		return rs;
+	}
+
+	public void setRs(ResultSet rs) {
+		this.rs = rs;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+	
+	
+	
+	
+}

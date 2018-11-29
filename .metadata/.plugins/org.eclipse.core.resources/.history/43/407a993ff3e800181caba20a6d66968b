@@ -1,0 +1,29 @@
+package coreJava.Services;
+
+import java.util.List;
+
+import coreJava.Models.Instructor;
+import coreJava.Repositories.InstructorDAOI;
+import coreJava.Util.DAO;
+
+public class InstructorImpliment extends DAO implements InstructorDAOI {
+
+	@Override
+	public List<Instructor> getAllInstructors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Instructor getInstructorByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String validateUser(Instructor instructor, String comparablePassword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

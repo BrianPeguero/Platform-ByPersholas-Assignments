@@ -1,0 +1,9 @@
+package coreJava.CustomExceptions;
+
+public class StudentRegistrationException extends Exception{
+
+	/**
+	 * 
+	 */
+
+}

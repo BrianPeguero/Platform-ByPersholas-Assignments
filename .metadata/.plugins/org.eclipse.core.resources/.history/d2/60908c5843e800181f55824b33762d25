@@ -1,0 +1,12 @@
+package coreJava.Models;
+
+public class Student {
+	
+	private int student_id;
+	private String full_name;
+	private String email;
+	private double gpa;
+	private String password;
+	private int student_role;
+	
+}

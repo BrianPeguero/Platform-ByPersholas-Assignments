@@ -1,0 +1,69 @@
+{
+  "folders": [
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\Brian_Peguero_Assignment_2"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\Brian_Peguero_School_Managment_Sys"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\Brian_Peguero_School_Managment_Sys3"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\FileIO"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 6 Day 1"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 6 Day 2"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 6 Day 3"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 6 Day 4"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 6 Day 5"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 7 Day 1"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 7 Day 2"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 7 Day 3"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\In Class Week 7 Day 4"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\JUnitProj"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\Leet Code"
+    },
+    {
+      "path": "C:\\Users\\brian\\Documents\\Programming\\Java\\workspace\\Week 7 Assignment 1"
+    }
+  ],
+  "settings": {
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "htmlhint.options": {
+      "attr-value-double-quotes": true,
+      "attr-no-duplication": true,
+      "tag-pair": true,
+      "spec-char-escape": true,
+      "id-unique": false,
+      "src-not-empty": true,
+      "title-require": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+package coreJava.Models;
+
+public class Course {
+	private int course_id;
+	private String course_name;
+	private double minimum_gpa;
+}

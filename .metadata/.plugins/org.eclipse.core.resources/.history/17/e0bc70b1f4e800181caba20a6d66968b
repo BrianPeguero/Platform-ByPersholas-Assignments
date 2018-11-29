@@ -1,0 +1,15 @@
+package coreJava.Enums;
+
+public enum InstructorEnum {
+	GET_ALL_INSTRUCTORS("");
+	
+	private final String query;
+	
+	InstructorEnum(String query){
+		this.query = query;
+	}
+	
+	public String getQuery(String query) {
+		return query;
+	}
+}

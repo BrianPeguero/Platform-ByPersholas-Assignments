@@ -1,0 +1,71 @@
+package javaCore.App.Services;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javaCore.App.Models.Item;
+import javaCore.App.Repositories.ItemDAOInterface;
+import javaCore.App.Config.AbstractDAO;
+import javaCore.App.Enums.ItemEnum;
+
+public class ItemDAOImplement extends AbstractDAO implements ItemDAOInterface {
+	
+	/**
+	 * Connects to the database using the connect method from AbstractDAO
+	 * and implements ItemDAOInterface method to prepare an SQL statement from
+	 * ItemEnum and executed by AbstractDAO.
+	 * 
+	 * Returns a list of items where items in stock is greater than 0.
+	 * 
+	 * @return listOfItems  List<Item>
+	 */
+	public List<Item> getItemsInStock() {
+		connect();
+		List<Item> listOfItems = new ArrayList<Item>();
+		try {
+			ps = connection.prepareStatement(ItemEnum.GET_ITMES_IN_STOCK.getQuery());
+			rs = ps.executeQuery();
+			
+			while (rs.next()) {
+				listOfItems.add(new Item(rs.getInt(0), rs.getString(1), rs.getInt(2), rs.getDouble(3)));
+			}
+		} catch (SQLException e) {
+			System.out.println("Could not execute your query");
+		} finally {
+			dispose();
+		}
+		return listOfItems;
+	}
+	
+	/**
+	 * Connects to the database using the connect method from AbstractDAO
+	 * and implements ItemDAOInterface method to prepare an SQL statement from
+	 * ItemEnum and executed by AbstractDAO.
+	 * 
+	 * The quantity of items is updated based on the item id
+	 * 
+	 * @param id
+	 * @param newQuantityInStock
+	 * 
+	 * @return boolean
+	 */
+	public boolean updateQuantityInStock(int id, int newQuantityInStock) {
+		boolean updated = false;
+		
+		connect();
+		try {
+			ps = connection.prepareStatement(ItemEnum.UPDATE_QUANTITY_IN_STOCK.getQuery());
+			ps.setInt(1, id);
+			ps.setInt(2, newQuantityInStock);
+			updated = ps.execute();
+		} catch (SQLException e) {
+			System.out.println("Could not execute your query");
+		} finally {
+			dispose();
+		}
+		
+		return updated;
+	}
+
+}

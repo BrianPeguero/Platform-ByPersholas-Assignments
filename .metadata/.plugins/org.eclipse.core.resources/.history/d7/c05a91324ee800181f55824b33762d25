@@ -1,0 +1,5 @@
+package coreJava.Util;
+
+public abstract class DAO {
+	
+}

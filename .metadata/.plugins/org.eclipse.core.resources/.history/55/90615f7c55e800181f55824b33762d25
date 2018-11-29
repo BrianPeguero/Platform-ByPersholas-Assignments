@@ -1,0 +1,15 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+
+public interface CourseDAOI {
+	
+	/**
+	 * Returns a list of all the courses in the database
+	 * 
+	 * @return
+	 */
+	public List<Course>getAllCourses();
+}

@@ -1,0 +1,8 @@
+package coreJava.Services;
+
+import coreJava.Repositories.AttendingInterface;
+import coreJava.Util.DAO;
+
+public class AttendingImpliment extends DAO implements AttendingInterface {
+
+}

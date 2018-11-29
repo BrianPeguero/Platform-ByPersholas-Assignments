@@ -1,0 +1,22 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+
+public interface TeachingDAOI {
+
+	/**
+	 * 
+	 * 
+	 * @return
+	 */
+	public int registerStudentToCourse();
+
+	/**
+	 * 
+	 * 
+	 * @return
+	 */
+	public List<Course> getInstructorsCourses();
+}

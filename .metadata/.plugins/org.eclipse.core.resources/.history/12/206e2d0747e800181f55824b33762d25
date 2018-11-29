@@ -1,0 +1,21 @@
+package main;
+
+public class MainRunner {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		calculator();
+	}
+	
+	public static void calculator() {
+		int n = 0;
+		
+	}
+	
+	class Calculator {
+		public int adder(int m, int n) {
+			return n + m;
+		}
+	}
+	
+}

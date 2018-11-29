@@ -1,0 +1,15 @@
+package coreJava.Services;
+
+import coreJava.Models.Student;
+import coreJava.Repositories.StudenDAOI;
+import coreJava.Util.DAO;
+
+public class StudentImpliment extends DAO implements StudenDAOI{
+
+	@Override
+	public Student getStudentByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -1,0 +1,33 @@
+package coreJava.Services;
+
+import java.util.List;
+
+import coreJava.DAO.DAO;
+import coreJava.Models.Course;
+import coreJava.Repositories.CourseDAOI;
+
+public class CourseImpliment extends DAO implements CourseDAOI {
+
+	/**
+	 * This method takes no parameter and returns every Course in the database.
+	 * 
+	 * @return
+	 */
+	public List<Course> getAllCourses() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * This method takes an int as a parameter and queries the database for all the
+	 * courses one instructor is assigned to.
+	 * 
+	 * @param instructor_id
+	 * @return
+	 */
+	public List<Course> getCourseByInstructor(int instructor_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

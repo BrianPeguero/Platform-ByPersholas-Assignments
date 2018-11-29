@@ -1,0 +1,19 @@
+package coreJava.Enums;
+
+public enum CourseEnum {
+	GET_ALL_COURSES("SELECT * FROM courses"),
+	GET_COURSE_BY_INSTRUCTOR("SELECT course.* "
+							+ "FROM course "
+							+ "JOIN instructor ON course.course_name = instructor.course_name "
+							+ "WHERE instructor_id=?");
+	
+	private final String query;
+	
+	CourseEnum(String query){
+		this.query = query;
+	}
+	
+	public String getQuery() {
+		return query;
+	}
+}

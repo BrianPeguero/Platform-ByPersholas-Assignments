@@ -1,0 +1,72 @@
+package coreJava.Services;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import coreJava.DAO.DAO;
+import coreJava.Enums.CourseEnum;
+import coreJava.Models.Course;
+import coreJava.Repositories.CourseDAOI;
+
+public class CourseImpliment extends DAO implements CourseDAOI {
+
+	/**
+	 * This method takes no parameter and returns every Course in the database.
+	 * 
+	 * @return
+	 */
+	public List<Course> getAllCourses() {
+		List<Course> listOfAllCourses = new ArrayList<Course>();
+		
+		connect();
+		
+		try {
+			ps = conn.prepareStatement(CourseEnum.GET_ALL_COURSES.getQuery());
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				listOfAllCourses.add(new Course(rs.getInt(0), rs.getString(1), rs.getDouble(2)));
+			}
+		} catch (SQLException e) {
+			System.out.println("/nSorry no courses to show/n");
+		} finally {
+			dispose();
+		}
+		
+		return listOfAllCourses;
+	}
+
+	/**
+	 * This method takes an int as a parameter and queries the database for all the
+	 * courses one instructor is assigned to.
+	 * 
+	 * @param instructor_id
+	 * @return
+	 */
+	public List<Course> getCourseByInstructor(int instructor_id) {
+		List<Course> instructorsCourses = new ArrayList<Course>();
+		
+		connect();
+		
+		try {
+			ps = conn.prepareStatement(CourseEnum.GET_COURSE_BY_INSTRUCTOR.getQuery());
+			ps.setInt(1, instructor_id);
+			
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				instructorsCourses.add(new Course(rs.getInt(0), rs.getString(1), rs.getDouble(2)));
+			}
+		} catch (SQLException e) {
+			System.out.println("\nSorry no courses from that email\n");
+		} finally {
+			dispose();
+		}
+		
+			
+		
+		return null;
+	}
+
+}

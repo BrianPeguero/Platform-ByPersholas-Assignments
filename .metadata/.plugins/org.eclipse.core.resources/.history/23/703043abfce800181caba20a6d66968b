@@ -1,0 +1,16 @@
+package coreJava.Enums;
+
+public enum AttendingEnum {
+	GET_STUDENT_BY_EMAIL("SELECT * FROM student WHERE email=?"),
+	STUDENT_PASSWORD("SELECT password FROM student");
+	
+	private final String query;
+	
+	AttendingEnum(String query){
+		this.query = query;
+	}
+	
+	public String getQuery() {
+		return this.query;
+	}
+}

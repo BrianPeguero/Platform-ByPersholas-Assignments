@@ -1,0 +1,7 @@
+package coreJava.Models;
+
+public class Attending {
+	private String course_name;
+	private String full_name;
+	private String email;
+}

@@ -1,0 +1,22 @@
+[2018-11-19 09:03:03.728] [exthost1] [info] extension host started
+[2018-11-19 09:03:03.867] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:03.868] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\debug-auto-launch\out\extension
+[2018-11-19 09:03:04.338] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:04.338] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\emmet\dist\extension
+[2018-11-19 09:03:04.574] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:04.574] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\merge-conflict\out\extension
+[2018-11-19 09:03:05.119] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:05.119] [exthost1] [info] ExtensionService#loadCommonJSModule c:\Users\brian\.codemix\engine\resources\app\extensions\search-rg\out\extension
+[2018-11-19 09:03:05.293] [exthost1] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:05.293] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\christian-kohler.path-intellisense-1.4.2\out\src\extension
+[2018-11-19 09:03:05.554] [exthost1] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:05.554] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\dbaeumer.vscode-eslint-1.6.0\client\out\extension
+[2018-11-19 09:03:06.619] [exthost1] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:06.619] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\formulahendry.auto-close-tag-0.5.6\out\src\extension
+[2018-11-19 09:03:06.640] [exthost1] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:06.640] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\hookyqr.beautify-1.4.4\extension
+[2018-11-19 09:03:07.430] [exthost1] [info] ExtensionService#_doActivateExtension ms-vsts.team {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:07.430] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\ms-vsts.team-1.142.0\out\src\extension
+[2018-11-19 09:03:17.399] [exthost1] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-11-19 09:03:17.399] [exthost1] [info] ExtensionService#loadCommonJSModule C:\Users\brian\.codemix\extensions\zignd.html-css-class-completion-1.17.1\out\src\extension
+[2018-11-19 09:03:22.351] [exthost1] [info] eager extensions activated

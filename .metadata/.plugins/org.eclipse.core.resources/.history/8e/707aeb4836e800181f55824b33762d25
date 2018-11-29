@@ -1,0 +1,5 @@
+package coreJava.Models;
+
+public class Attending {
+
+}

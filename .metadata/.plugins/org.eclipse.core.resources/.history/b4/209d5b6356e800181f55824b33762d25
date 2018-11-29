@@ -1,0 +1,8 @@
+package coreJava.Services;
+
+import coreJava.Repositories.TeachingDAOI;
+import coreJava.Util.DAO;
+
+public class TeachingImpliment extends DAO implements TeachingDAOI {
+
+}

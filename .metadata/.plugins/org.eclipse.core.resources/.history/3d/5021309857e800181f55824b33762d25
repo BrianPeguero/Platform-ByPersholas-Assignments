@@ -1,0 +1,26 @@
+package coreJava.Repositories;
+
+import java.util.List;
+
+import coreJava.Models.Course;
+import coreJava.Models.Student;
+
+public interface AttendingDAOI {
+	
+	/**
+	 * Registers a Student to a course
+	 * 
+	 * @param student
+	 * @param course
+	 * @return
+	 */
+	public int registerStudentToCourse(Student student, Course course);
+	
+	/**
+	 * Returns the courses the student is enrolled in
+	 * 
+	 * @param student_id
+	 * @return
+	 */
+	public List<Course> getStudentCourse(int student_id);
+}

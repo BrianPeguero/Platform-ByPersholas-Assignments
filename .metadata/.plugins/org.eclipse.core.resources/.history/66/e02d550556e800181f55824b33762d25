@@ -1,0 +1,16 @@
+package coreJava.Services;
+
+import coreJava.Models.Course;
+import coreJava.Models.Student;
+import coreJava.Repositories.AttendingDAOI;
+import coreJava.Util.DAO;
+
+public class AttendingImpliment extends DAO implements AttendingDAOI {
+
+	@Override
+	public int registerStudentToCourse(Student student, Course course) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

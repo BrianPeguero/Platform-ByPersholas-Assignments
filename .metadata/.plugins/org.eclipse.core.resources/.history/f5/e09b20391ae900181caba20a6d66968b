@@ -1,0 +1,55 @@
+package coreJava.Services;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import coreJava.Enums.TeachingEnum;
+import coreJava.Models.Course;
+import coreJava.Models.Teaching;
+import coreJava.Repositories.TeachingDAOI;
+import coreJava.Util.DAO;
+
+public class TeachingImpliment extends DAO implements TeachingDAOI {
+
+	/**
+	 * This method takes no parameters and queries the database for every instructor
+	 * assigned to a course.
+	 * 
+	 * @return
+	 */
+	public List<Course> getInstructorsCourses() {
+		List<Teaching> listOfInstructors = new ArrayList<Teaching>();
+		
+		connect();
+		
+		try {
+			ps = conn.prepareStatement(TeachingEnum.GET_INSTRUCTORS_TEACHING_COURSES.getQuery());
+			
+		} catch (SQLException e) {
+			System.out.println("Sorry couldn't execute query.");
+		} finally {
+			dispose();
+		}
+		
+		
+		return null;
+	}
+
+	/**
+	 * This method takes as a parameter a course_id and a instructor_id int and
+	 * perform an INSERT query into the TEACHING table to assign an instructor to a
+	 * course.
+	 * 
+	 * @param course_id
+	 * @param instructor_id
+	 * 
+	 * @return
+	 */
+	@Override
+	public int assignIntructorToCourse(int course_id, int instructor_id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
